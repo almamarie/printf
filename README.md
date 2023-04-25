@@ -1,3 +1,3 @@
 # PRINTF
 
-Solution to the printf assignment of the ALX SE project
+Solution to the printf assignment in the ALX Fullstack SE course
