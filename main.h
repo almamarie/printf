@@ -87,10 +87,18 @@ int write_num(int ind, char bff[], int flags, int width, int precision,
 	int length, char padd, char extra_c);
 int write_pointer(char buffer[], int ind, int length,
 	int width, int flags, char padd, char extra_c, int padd_start);
-
 int write_unsgnd(int is_negative, int ind,
 char buffer[],
 	int flags, int width, int precision, int size);
+int print_non_printable(va_list types, char buffer[],
+	int flags, int width, int precision, int size);
+int print_pointer(va_list types, char buffer[],
+	int flags, int width, int precision, int size);
+int print_reverse(va_list types, char buffer[],
+	int flags, int width, int precision, int size);
+int print_rot13string(va_list types, char buffer[],
+	int flags, int width, int precision, int size);
+
 
 /******************Helper functions ******************/
 int is_printable(char);
